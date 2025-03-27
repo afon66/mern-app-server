@@ -16,7 +16,7 @@ const mongoURI = process.env.MONGO_URI
 app.use(cors()) 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use('https://mern-app-server-1-xnha.onrender.com/api', router)
+app.use('/api', router)
 app.use('/uploads', express.static('uploads'))
 
 mongoose.connect(mongoURI)
