@@ -3,7 +3,7 @@ import { UserController, PostController, CommentController, LikeController, Foll
 import authenticationToken from '../middlewares/auth.js'
 import uploads from '../middlewares/loaders.js'
 
-const router = new Router() 
+const router = new Router()  
 
 router.post('/register', UserController.register)
 router.post('/login', UserController.login)
